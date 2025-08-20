@@ -1,53 +1,52 @@
-# rm-plugin-functions
+# rm-functions-plugin
 
 A fish plugin to remove unneeded functions from other fish plugins automatically.
 
 ## Overview
 
-`rm-plugin-functions` is designed to help users of the [fish shell](https://fishshell.com/) keep their environment clean by automatically removing unnecessary functions that may accumulate from other fish plugins.
+`rm-functions-plugin` is designed to help users of the [fish shell](https://fishshell.com/) keep their environment clean by automatically removing unnecessary functions that may accumulate from other plugins.
 
 ## Features
 
-- Remove for unneeded functions from other plugins.
+- Remove unneeded functions from other plugins.
 - Automates the cleanup process, reducing manual maintenance.
 
 ## Repository Structure
 
-- `completions/` - contains command-line completions for rm-plugin-functions script.
-- `conf.d/` - contains startup script that run the automatic removal of functions.
-- `functions/` - Houses the callable rm-plugin-functions script.
+- `completions/` - contains command-line completions for rm-functions-plugin script.
+- `conf.d/` - contains startup script that runs the automatic removal of functions.
+- `functions/` - Houses the callable rm-functions-plugin script.
 
 ## Installation
 Using fisher
 
-    fisher install SPREEKDOS/rm-plugin-functions
+    fisher install SPREEKDOS/rm-functions-plugin
 
 ## Usage
-remove functions in ~/.config/fish/functions using function names from ~/.config/fish/rm-plugin-functions
+Remove functions in ~/.config/fish/functions using function names from ~/.config/fish/rm-functions-plugin
 
-`rm-plugin-functions`
+    rm-functions-plugin
 
-add function name to ~/.config/fish/rm-plugin-functions file
-    
-`rm-plugin-functions a|add FUNCTION`
+Add function name to ~/.config/fish/rm-functions-plugin file
 
-run fisher update before running the script
+    rm-functions-plugin a|add FUNCTION
 
-`rm-plugin-functions u|update`
+Run fisher update before running the script
 
-list ~/.config/fish/rm-plugin-functions file
-    
-`rm-plugin-functions l|list`
+    rm-functions-plugin u|update
 
-list ~/.config/fish/functions directory
-    
-`rm-plugin-functions l|list functions`
+List ~/.config/fish/rm-functions-plugin file
 
-remove function name from ~/.config/fish/rm-plugin-functions file
-    
-`rm-plugin-functions r|remove FUNCTION`
+    rm-functions-plugin l|list
 
-    
+List ~/.config/fish/functions directory
+
+    rm-functions-plugin l|list functions
+
+Remove function name from ~/.config/fish/rm-functions-plugin file
+
+    rm-functions-plugin r|remove FUNCTION
+
 ## Contributing
 
 If you'd like to contribute, feel free to open a pull request or issue.
@@ -58,4 +57,4 @@ MIT
 
 ---
 
-For any questions or suggestions, please visit the [GitHub repo](https://github.com/SPREEKDOS/rm-plugin-functions).
+For any questions or suggestions, please visit the [GitHub repo](https://github.com/SPREEKDOS/rm-functions-plugin).
