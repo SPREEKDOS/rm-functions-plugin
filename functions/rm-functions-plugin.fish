@@ -1,20 +1,20 @@
 #!/usr/bin/env fish
-# @SPREEKDOS/rm-plugin-functions/functions/rm-plugin-functions.fish:v1.0.0
+# @SPREEKDOS/rm-functions-plugin/functions/rm-functions-plugin.fish:v1.0.0
 set -g script_name $(status basename)
 
 function usage
-    echo "usage: $script_name 
-            remove functions in ~/.config/fish/functions using function names from ~/.config/fish/rm-plugin-functions
+    echo "usage: $script_name
+            remove functions in ~/.config/fish/functions using function names from ~/.config/fish/rm-functions-plugin
         $script_name a|add FUNCTION
-            add function name to ~/.config/fish/rm-plugin-functions file
+            add function name to ~/.config/fish/rm-functions-plugin file
         $script_name u|update
             run fisher update before running the script
         $script_name l|list
-            list ~/.config/fish/rm-plugin-functions file
+            list ~/.config/fish/rm-functions-plugin file
         $script_name l|list functions
             list ~/.config/fish/functions directory
         $script_name r|remove FUNCTION
-            remove function name from ~/.config/fish/rm-plugin-functions file
+            remove function name from ~/.config/fish/rm-functions-plugin file
         options:
             -h, --help     Print this help message"
 end
@@ -41,7 +41,7 @@ function list
         case '*'
             usage ; exit 1
     end
-        
+
 end
 function remove
     if echo $func \
@@ -62,13 +62,13 @@ function main
     if set -q _flag_h
         usage ; return 0
     end
-    set -g list $HOME/.config/fish/rm-plugin-functions
+    set -g list $HOME/.config/fish/rm-functions-plugin
     set -g func $argv[2..]
     set -g func $(path basename $func)
     string match .fish $(path extension $func)
     or set -g func $func.fish
-    
-    switch "$argv[1]" 
+
+    switch "$argv[1]"
         case add a
             add ; return 0
         case list l
