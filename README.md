@@ -57,4 +57,4 @@ MIT
 
 ---
 
-For any questions or suggestions, please visit the [GitHub repo](https://github.com/SPREEKDOS/rm-functions-plugin).
+For any questions or suggestions, please visit the [Issues](https://github.com/SPREEKDOS/rm-functions-plugin/issues).
