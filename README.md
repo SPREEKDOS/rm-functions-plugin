@@ -53,7 +53,7 @@ If you'd like to contribute, feel free to open a pull request or issue.
 
 ## License
 
-MIT
+GPL3
 
 ---
 
